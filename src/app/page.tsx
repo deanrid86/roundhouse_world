@@ -1,101 +1,79 @@
-import Image from "next/image";
+// File: pages/index.tsx
+import React from 'react';
 
-export default function Home() {
+
+const HomePage: React.FC = () => {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div className="min-h-screen bg-black text-white font-sans">
+     
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      {/* Hero Section */}
+      <section className="hero bg-cover bg-center h-[50vh] flex items-center justify-center" style={{ backgroundImage: "url('/hero-image.jpg')" }}>
+        <div className="text-center px-4">
+          <h2 className="text-4xl font-bold mb-4">Kickstart Your Journey</h2>
+          <p className="text-lg mb-6">Gear, Tips, and Training for Every Fighter</p>
+          <div className="space-x-4">
+            <a href="#gear" className="bg-white text-black px-6 py-2 rounded hover:bg-gray-200">Explore Gear</a>
+            <a href="#training" className="bg-transparent border border-white px-6 py-2 rounded hover:bg-gray-800">Learn Techniques</a>
+          </div>
+        </div>
+      </section>
+
+      {/* Featured Sections */}
+      <main className="py-12">
+        <div className="container mx-auto">
+          {/* Gear Reviews */}
+          <section id="gear" className="mb-12">
+            <h3 className="text-3xl font-semibold mb-6">Top Gear Picks</h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="p-6 bg-gray-800 rounded">
+                <h4 className="text-xl font-bold mb-4">Kickboxing Gloves</h4>
+                <p className="text-gray-400">Explore the best gloves for training and competition.</p>
+                <a href="/gear-reviews" className="text-blue-400 mt-4 block hover:underline">Learn More</a>
+              </div>
+              <div className="p-6 bg-gray-800 rounded">
+                <h4 className="text-xl font-bold mb-4">Punching Bags</h4>
+                <p className="text-gray-400">Find the perfect bag for your home gym setup.</p>
+                <a href="/gear-reviews" className="text-blue-400 mt-4 block hover:underline">Learn More</a>
+              </div>
+              <div className="p-6 bg-gray-800 rounded">
+                <h4 className="text-xl font-bold mb-4">Protective Gear</h4>
+                <p className="text-gray-400">Stay safe with high-quality protective equipment.</p>
+                <a href="/gear-reviews" className="text-blue-400 mt-4 block hover:underline">Learn More</a>
+              </div>
+            </div>
+          </section>
+
+          {/* Training Tips */}
+          <section id="training" className="mb-12">
+            <h3 className="text-3xl font-semibold mb-6">Training Tips</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="p-6 bg-gray-800 rounded">
+                <h4 className="text-xl font-bold mb-4">Roundhouse Kick Mastery</h4>
+                <p className="text-gray-400">Learn how to perfect your roundhouse kick with expert techniques.</p>
+                <a href="/training-tips" className="text-blue-400 mt-4 block hover:underline">Read More</a>
+              </div>
+              <div className="p-6 bg-gray-800 rounded">
+                <h4 className="text-xl font-bold mb-4">Conditioning for Fighters</h4>
+                <p className="text-gray-400">Improve stamina and strength with our kickboxing conditioning tips.</p>
+                <a href="/training-tips" className="text-blue-400 mt-4 block hover:underline">Read More</a>
+              </div>
+            </div>
+          </section>
         </div>
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+
+      {/* Footer */}
+      <footer className="py-8 bg-gray-900">
+        <div className="container mx-auto text-center">
+          <p className="text-gray-500">© {new Date().getFullYear()} Roundhouse World. All rights reserved.</p>
+          <p className="text-gray-500">
+            <a href="/policies" className="hover:underline">Privacy Policy</a> | <a href="/policies" className="hover:underline">Affiliate Disclaimer</a>
+          </p>
+        </div>
       </footer>
     </div>
   );
-}
+};
+
+export default HomePage;
