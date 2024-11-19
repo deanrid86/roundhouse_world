@@ -8,7 +8,7 @@ const HomePage: React.FC = () => {
      
 
       {/* Hero Section */}
-      <section className="hero bg-cover bg-center h-[50vh] flex items-center justify-center" style={{ backgroundImage: "url('/hero-image.jpg')" }}>
+      <section className="hero bg-cover bg-center h-[50vh] flex items-center justify-center" style={{ backgroundImage: "url('main/main.jpg')" }}>
         <div className="text-center px-4">
           <h2 className="text-4xl font-bold mb-4">Kickstart Your Journey</h2>
           <p className="text-lg mb-6">Gear, Tips, and Training for Every Fighter</p>
