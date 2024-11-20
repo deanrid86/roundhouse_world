@@ -17,22 +17,22 @@ const TrainingTipsPage: React.FC = () => {
       id: 1,
       title: "Mastering the Roundhouse Kick",
       description: "Learn the techniques to deliver powerful and precise roundhouse kicks.",
-      image: "/training-roundhouse.jpg",
-      link: "/training-tips/roundhouse-kick",
+      image: "/training/roundhouse.jpg",
+      link: "/training/roundhouse",
     },
     {
       id: 2,
       title: "Conditioning for Kickboxers",
       description: "Build stamina, strength, and agility with these kickboxing-specific workouts.",
-      image: "/training-conditioning.jpg",
-      link: "/training-tips/conditioning",
+      image: "/training/squats.jpg",
+      link: "/training/conditioning",
     },
     {
       id: 3,
       title: "Punch and Kick Combos",
       description: "Effective combinations to dominate your training sessions and sparring.",
-      image: "/training-combos.jpg",
-      link: "/training-tips/combos",
+      image: "/training/combos.jpg",
+      link: "/training/combos",
     },
   ];
 

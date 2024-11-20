@@ -17,22 +17,22 @@ const GearReviewsPage: React.FC = () => {
       id: 1,
       title: "Kickboxing Gloves",
       description: "High-quality gloves designed for training and competition.",
-      image: "/gear-gloves.jpg",
-      affiliateLink: "https://example.com/gloves",
+      image: "/Gear/Gloves/RDX_Pro.jpg",
+      affiliateLink: "/gear/gloves",
     },
     {
       id: 2,
       title: "Punching Bags",
       description: "Durable punching bags to perfect your strikes.",
-      image: "/gear-bag.jpg",
-      affiliateLink: "https://example.com/bags",
+      image: "/Gear/Punch_Bags/RDX_F6.jpg",
+      affiliateLink: "/gear/punch_bag",
     },
     {
       id: 3,
       title: "Protective Gear",
       description: "Essential protective equipment for safe training.",
-      image: "/gear-protection.jpg",
-      affiliateLink: "https://example.com/protection",
+      image: "/Gear/Protective/RDX_Headguard.jpg",
+      affiliateLink: "/gear/protective",
     },
   ];
 

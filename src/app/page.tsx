@@ -29,17 +29,17 @@ const HomePage: React.FC = () => {
               <div className="p-6 bg-gray-800 rounded">
                 <h4 className="text-xl font-bold mb-4">Kickboxing Gloves</h4>
                 <p className="text-gray-400">Explore the best gloves for training and competition.</p>
-                <a href="/gear-reviews" className="text-blue-400 mt-4 block hover:underline">Learn More</a>
+                <a href="/gear/gloves" className="text-blue-400 mt-4 block hover:underline">Learn More</a>
               </div>
               <div className="p-6 bg-gray-800 rounded">
                 <h4 className="text-xl font-bold mb-4">Punching Bags</h4>
                 <p className="text-gray-400">Find the perfect bag for your home gym setup.</p>
-                <a href="/gear-reviews" className="text-blue-400 mt-4 block hover:underline">Learn More</a>
+                <a href="/gear/punch_bag" className="text-blue-400 mt-4 block hover:underline">Learn More</a>
               </div>
               <div className="p-6 bg-gray-800 rounded">
                 <h4 className="text-xl font-bold mb-4">Protective Gear</h4>
                 <p className="text-gray-400">Stay safe with high-quality protective equipment.</p>
-                <a href="/gear-reviews" className="text-blue-400 mt-4 block hover:underline">Learn More</a>
+                <a href="/gear/protective" className="text-blue-400 mt-4 block hover:underline">Learn More</a>
               </div>
             </div>
           </section>
@@ -49,14 +49,15 @@ const HomePage: React.FC = () => {
             <h3 className="text-3xl font-semibold mb-6">Training Tips</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="p-6 bg-gray-800 rounded">
-                <h4 className="text-xl font-bold mb-4">Roundhouse Kick Mastery</h4>
-                <p className="text-gray-400">Learn how to perfect your roundhouse kick with expert techniques.</p>
-                <a href="/training-tips" className="text-blue-400 mt-4 block hover:underline">Read More</a>
+                <h4 className="text-xl font-bold mb-4">Things to consider before joining a gym</h4>
+                <p className="text-gray-400">Joining a gym for kickboxing is an exciting step, but choosing the right one can make all the difference. 
+                From class size and facilities to gym culture, this guide helps you find the perfect fit for your needs and goals.</p>
+                <a href="/training/beginner/before_joining_a_gym" className="text-blue-400 mt-4 block hover:underline">Read More</a>
               </div>
               <div className="p-6 bg-gray-800 rounded">
                 <h4 className="text-xl font-bold mb-4">Conditioning for Fighters</h4>
                 <p className="text-gray-400">Improve stamina and strength with our kickboxing conditioning tips.</p>
-                <a href="/training-tips" className="text-blue-400 mt-4 block hover:underline">Read More</a>
+                <a href="/training/conditioning" className="text-blue-400 mt-4 block hover:underline">Read More</a>
               </div>
             </div>
           </section>
