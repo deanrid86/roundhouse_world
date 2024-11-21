@@ -16,6 +16,16 @@ const BuddhaFightWearReview: React.FC = () => {
             className="rounded shadow-lg"
           />
         </div>
+        <div className="mt-6">
+          <a
+            href="https://amzn.to/3CF84SO"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-500"
+          >
+            Check Price on Amazon
+          </a>
+        </div>
       </header>
 
       {/* Main Content */}
@@ -50,6 +60,80 @@ const BuddhaFightWearReview: React.FC = () => {
               Kickboxing, and MMA, accommodating a wide range of training needs.
             </li>
           </ul>
+        </section>
+
+        {/* Comparison Table */}
+        <section className="mb-12">
+          <h2 className="text-2xl font-semibold mb-4">Comparison Table</h2>
+          <div className="overflow-x-auto">
+            <table className="table-auto w-full text-left border-collapse border border-gray-700 text-gray-400">
+              <thead>
+                <tr>
+                  <th className="border border-gray-700 px-4 py-2">Feature</th>
+                  <th className="border border-gray-700 px-4 py-2">Buddha Fight Wear Gloves</th>
+                  <th className="border border-gray-700 px-4 py-2">Everlast Pro Style Training Gloves</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td className="border border-gray-700 px-4 py-2">Material</td>
+                  <td className="border border-gray-700 px-4 py-2">
+                    High-performance synthetic leather: Durable and easy to clean.
+                  </td>
+                  <td className="border border-gray-700 px-4 py-2">
+                    Synthetic leather: Durable but may not match the longevity of higher-end materials.
+                  </td>
+                </tr>
+                <tr>
+                  <td className="border border-gray-700 px-4 py-2">Padding</td>
+                  <td className="border border-gray-700 px-4 py-2">
+                    GS-3 technology with intelligent impact protection padding for excellent shock absorption.
+                  </td>
+                  <td className="border border-gray-700 px-4 py-2">
+                    Two-layer foam padding providing adequate protection for beginners.
+                  </td>
+                </tr>
+                <tr>
+                  <td className="border border-gray-700 px-4 py-2">Fit and Closure</td>
+                  <td className="border border-gray-700 px-4 py-2">
+                    Wide Velcro closure system ensuring a snug and secure fit.
+                  </td>
+                  <td className="border border-gray-700 px-4 py-2">
+                    Hook-and-loop closure for a secure fit, though some users report it may wear over time.
+                  </td>
+                </tr>
+                <tr>
+                  <td className="border border-gray-700 px-4 py-2">Design</td>
+                  <td className="border border-gray-700 px-4 py-2">
+                    Matte finish with special edition design for aesthetic appeal.
+                  </td>
+                  <td className="border border-gray-700 px-4 py-2">
+                    Standard design available in limited colors.
+                  </td>
+                </tr>
+                <tr>
+                  <td className="border border-gray-700 px-4 py-2">Price</td>
+                  <td className="border border-gray-700 px-4 py-2">
+                    <a
+                      href="https://amzn.to/3CF84SO"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-400 hover:underline"
+                    >
+                    Check Price
+                    </a>
+                     Mid-range pricing for its premium features.
+                  </td>
+                  <td className="border border-gray-700 px-4 py-2">
+                    
+                     
+                    
+                    Lower-priced but with fewer features.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </section>
 
         {/* Cons Section */}
@@ -87,6 +171,18 @@ const BuddhaFightWearReview: React.FC = () => {
             However, considerations regarding material preference, potential break-in time, and availability should be 
             taken into account when selecting these gloves. For those willing to invest in premium gloves, they provide 
             excellent value for performance and design.
+          </p>
+          <p className="text-gray-400">
+            Interested in these gloves?{" "}
+            <a
+              href="https://amzn.to/3CF84SO"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-400 hover:underline"
+            >
+              Check them out on Amazon
+            </a>
+            .
           </p>
         </section>
       </main>
