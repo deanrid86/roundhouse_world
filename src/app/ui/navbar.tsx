@@ -33,6 +33,9 @@ const Header: React.FC = () => {
               <Link href="/training" className="hover:text-gray-400 text-2xl font-semibold">Training Tips</Link>
             </li>
             <li>
+              <Link href="/fitness" className="hover:text-gray-400 text-2xl font-semibold">Fitness</Link>
+            </li>
+            <li>
               <Link href="/nutrition" className="hover:text-gray-400 text-2xl font-semibold">Nutrition</Link>
             </li>
             <li>
@@ -61,6 +64,12 @@ const Header: React.FC = () => {
           <Link href="/training" className="text-sm text-white hover:text-gray-400 flex flex-col items-center">
             <TrophyIcon className="w-6 h-6" />
             <span>Training</span>
+          </Link>
+        </li>
+        <li>
+          <Link href="/fitness" className="text-sm text-white hover:text-gray-400 flex flex-col items-center">
+            <TrophyIcon className="w-6 h-6" />
+            <span>Fitness</span>
           </Link>
         </li>
         <li>
