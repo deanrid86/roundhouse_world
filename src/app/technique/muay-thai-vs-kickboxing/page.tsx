@@ -18,7 +18,7 @@ const MuayThaiVsKickboxingPage = () => {
         </p>
       </section>
 
-      {/* Affiliate Boxxx*/}
+      {/* Affiliate Box*/}
       <div className="my-8 p-6 bg-green-100 border border-green-300 rounded-lg shadow-sm">
         <h3 className="text-xl font-semibold mb-2 text-green-900">
           Essential Gear for Both Arts
