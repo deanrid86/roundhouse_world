@@ -7,7 +7,7 @@ const MuayThaiVsKickboxingPage = () => {
         Muay Thai vs. Kickboxing: Technique Comparisons
       </h1>
 
-      {/* Introduction */}
+      {/* Introductinon */}
       <section className="mb-8">
         <h2 className="text-2xl font-semibold mb-2">Introduction</h2>
         <p>
