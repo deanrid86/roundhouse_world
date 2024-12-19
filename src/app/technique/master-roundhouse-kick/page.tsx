@@ -16,6 +16,22 @@ const HowToMasterRoundhouseKickPage = () => {
         </p>
       </section>
 
+      {/* Affiliate Box */}
+      <div className="my-8 p-6 bg-teal-100 border border-teal-300 rounded-lg shadow-sm">
+        <h3 className="text-xl font-semibold mb-2 text-teal-900">Enhance Your Roundhouse Training</h3>
+        <p className="mb-4 text-teal-900">
+          Improve your roundhouse kicks with specialized gear. From pivot boards for perfecting hip rotation to shin guards for safe conditioning, we’ve got you covered.
+        </p>
+        <a 
+          href="https://amzn.to/4gdN2JX" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="inline-block bg-teal-700 text-white font-semibold px-4 py-2 rounded hover:bg-teal-800 transition-colors"
+        >
+          View Recommended Roundhouse Tools
+        </a>
+      </div>
+
       {/* Technique Breakdown */}
       <section className="mb-8">
         <h2 className="text-2xl font-semibold mb-2">Technique Breakdown (Step-by-Step)</h2>
@@ -35,6 +51,26 @@ const HowToMasterRoundhouseKickPage = () => {
         </ol>
        
       </section>
+
+      <section className="mb-8">
+  <h2 className="text-2xl font-semibold mb-2">Watch Expert Techniques in Action</h2>
+  <p>
+    For additional insights and visual guidance, check out this demonstration by 6 x World Kickboxing Champion, Gabriel Vargas:
+  </p>
+  <div className="mt-4 p-2" style={{ width: '100%', maxWidth: '500px', margin: '0 auto' }}>
+    <iframe 
+      src="https://www.youtube.com/embed/oswDwOk2IFo" 
+      title="Gabriel Vargas on Improving Your Roundhouse Kick"
+      allowFullScreen
+      style={{
+        width: '100%',
+        aspectRatio: '1', // This ensures a perfect square
+        borderRadius: '8px', // Adds slight rounding to edges
+        border: '1px solid #ccc', // Adds a subtle border
+      }}
+    />
+  </div>
+</section>
 
       {/* Common Mistakes & Corrections */}
       <section className="mb-8">
@@ -68,16 +104,36 @@ const HowToMasterRoundhouseKickPage = () => {
         </p>
       </section>
 
-      {/* Technical Tips from Pros */}
-      <section className="mb-8">
-        <h2 className="text-2xl font-semibold mb-2">Expert Insights & Biomechanics</h2>
-        <p>
-          **Coach Insight:** Renowned Muay Thai trainer Saenchai emphasizes hip rotation and a relaxed upper body for maximum power. “Focus on whipping your hips through the target, not just swinging your leg,” he advises.
-        </p>
-        <p className="mt-2">
-          **Science Spotlight:** Studies in the <em>Journal of Sports Biomechanics</em> (2021) indicate that a properly executed roundhouse kick can generate force up to several times the kicker’s body weight, thanks to the kinetic chain from the pivoting foot through the hip rotation to the striking limb.
-        </p>
-      </section>
+    {/* Technical Tips from Pros */}
+<section className="mb-8">
+  <h2 className="text-2xl font-semibold mb-2">Expert Insights & Biomechanics</h2>
+  <p>
+    <strong>Coach Insight:</strong> Saenchai, a renowned Muay Thai legend, is celebrated for his exceptional kicking techniques, which emphasize hip rotation and fluid movement. His mastery of the roundhouse kick demonstrates the importance of generating power through proper body mechanics, particularly by coordinating hip rotation and balance. Saenchai&apos;s ability to whip his hips through the target, rather than simply swinging his leg, is a hallmark of his striking effectiveness. Learn more about his techniques on platforms like <a href="https://evolve-mma.com/blog/6-signature-techniques-of-saenchai-to-master/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Evolve MMA</a>.
+  </p>
+
+  {/* Embedded Saenchai Video */}
+  <div className="mt-4 p-2" style={{ width: '100%', maxWidth: '500px', margin: '0 auto' }}>
+    <iframe
+      src="https://www.youtube.com/embed/nTdxXY2_sws"
+      title="Saenchai's Signature Techniques"
+      allowFullScreen
+      style={{
+        width: '100%',
+        aspectRatio: '1',
+        borderRadius: '8px',
+        border: '1px solid #ccc',
+      }}
+    />
+  </div>
+
+  <p className="mt-4">
+    <strong>Science Spotlight:</strong> A study published in <em>PLOS ONE</em> examined the kinematics of roundhouse kicks across martial arts disciplines, highlighting the critical role of hip rotation, pelvic axial rotation, and knee extension in generating maximum power. The research underscores how effective roundhouse kicks rely on a well-coordinated kinetic chain, from the pivoting foot through the hips and limbs, to deliver devastating impact. Read the full study <a href="https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0182645" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">here</a>.
+  </p>
+  <p className="mt-2">
+    While the exact force generated varies by individual and technique, the principles of biomechanics show that proper execution can significantly enhance striking power, making the roundhouse kick a vital weapon in any fighter’s arsenal.
+  </p>
+</section>
+
 
       {/* Skill Development Drills & Progressions */}
       <section className="mb-8">
@@ -151,14 +207,6 @@ const HowToMasterRoundhouseKickPage = () => {
         </p>
       </section>
 
-      {/* References & Credibility */}
-      <section className="mb-8">
-        <h2 className="text-2xl font-semibold mb-2">References & Further Reading</h2>
-        <p>
-          - <em>Journal of Sports Biomechanics</em> (2021): Study on force generation in roundhouse kicks.  
-          - <em>International Journal of Martial Arts Science</em> (2020): Research on technique efficiency in Muay Thai and kickboxing.
-        </p>
-      </section>
 
       {/* Call-to-Action */}
       <section className="mb-8">
