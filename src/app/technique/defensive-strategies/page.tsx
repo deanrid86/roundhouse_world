@@ -74,6 +74,27 @@ const DefensiveStrategiesPage = () => {
         </p>
       </section>
 
+
+      <section className="mb-8">
+        {/* Embedded Video */}
+        <div className="mt-6" style={{ width: '100%', maxWidth: '500px', margin: '0 auto' }}>
+          <iframe 
+            src="https://www.youtube.com/embed/CqQwJjtMKXU" 
+            title="Parrying and Countering the Jab for Boxing, Kickboxing, Muay Thai and MMA"
+            allowFullScreen
+            style={{
+              width: '100%',
+              aspectRatio: '1',
+              borderRadius: '8px',
+              border: '1px solid #ccc',
+            }}
+          />
+        </div>
+        <p className="mt-4">
+          For a deeper dive into parrying techniques, watch this video by Hard2hurt. It covers effective parrying and countering strategies for jabs in kickboxing, Muay Thai, and MMA.
+        </p>
+      </section>
+
       {/* Drills for Blocking and Parrying */}
       <section className="mb-8">
         <h2 className="text-2xl font-semibold mb-2">Drills to Master Blocking and Parrying</h2>
